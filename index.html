@@ -3,7 +3,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
   <title>Naga Phanendhra & Koteswari| Wedding Invitation</title>
   <meta name="description" content="Wedding invitation for Koteswari and Naga Phanendhra" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -642,6 +642,142 @@
       .hero-meta { grid-template-columns: 1fr; }
       .portrait { min-height: 420px; }
     }
+@media (max-width:768px){
+.header-inner{
+    flex-direction:column;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.header-actions{
+    width:100%;
+    justify-content:center;
+    gap:.5rem;
+}
+
+.header-actions>*{
+    flex:1;
+}
+
+.hero{
+    padding:2rem 0 3rem;
+}
+
+.hero-grid{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.hero h1{
+    font-size:clamp(2.4rem,11vw,3.4rem);
+    line-height:1.05;
+    text-align:center;
+}
+
+.hero-copy{
+    text-align:center;
+}
+
+.hero-copy p{
+    max-width:100%;
+}
+
+.hero-meta{
+    grid-template-columns:1fr;
+}
+
+.hero-actions{
+    width:100%;
+}
+
+.hero-actions .button{
+    width:100%;
+}
+.hero-frame{
+    min-height:auto;
+    padding:10px;
+}
+
+.portrait{
+    aspect-ratio:3/4;
+    min-height:auto;
+}
+.cards-3{
+    gap:1rem;
+}
+
+.card{
+    padding:1.2rem;
+}
+
+.card h3{
+    font-size:1.4rem;
+}
+
+.section{
+    padding:3rem 0;
+}
+
+.panel,
+.card,
+.family-block{
+    padding:1.25rem;
+}
+.countdown-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.countdown-box strong{
+    font-size:2rem;
+}
+input,
+textarea,
+select{
+    font-size:16px;
+}
+.card,
+.panel,
+.family-block,
+.meta-card,
+.countdown-panel{
+
+    backdrop-filter:blur(10px);
+}
+.hero-frame{
+
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+
+}
+.hero h1{
+    font-size:clamp(2.5rem,8vw,5.5rem);
+}
+
+.section h2{
+    font-size:clamp(1.8rem,6vw,3rem);
+}
+
+.card h3{
+    font-size:clamp(1.3rem,5vw,1.8rem);
+}
+.button{
+    min-height:52px;
+}
+
+.text-link{
+    min-height:48px;
+}
+
+.theme-toggle{
+    min-height:48px;
+}
+.hero::before{
+    width:450px;
+    height:450px;
+    filter:blur(45px);
+}
+
+}
 
     @media (max-width: 720px) {
       .shell { width: min(100% - 1.25rem, 1180px); }
@@ -753,9 +889,7 @@ body{background:#111!important;}
           <div class="portrait" role="img" aria-label="Temple wedding portrait background">
             <div class="portrait-note">Sacred celebrations</div>
             <div class="portrait-photos" aria-hidden="true">
-              <img src="./main1.webp" alt="image 1"class="is-active">
-	      <img src="./main2.webp" alt="image 2">
-            </div>
+              <img src="./main1.webp" alt="image 1"class="is-active">            </div>
           </div>
         </div>
       </div>
@@ -863,8 +997,8 @@ body{background:#111!important;}
           <div class="portrait" role="img" aria-label="Temple wedding portrait background">
             <div class="portrait-note"></div>
             <div class="portrait-photos" aria-hidden="true">
-              <img src="./main1.webp" alt="image 1"class="is-active">
-	      <img src="./main2.webp" alt="image 2">
+              <img src="./main2.webp" alt="image 1"class="is-active">
+	      <img src="./main1.webp" alt="image 2">
 	      <img src="./image1.webp" alt="image 3">
 	      <img src="./image2.webp" alt="image 4">
             </div>
@@ -1006,18 +1140,26 @@ body{background:#111!important;}
       window.open(whatsappURL, '_blank');
     });
 
-    (function () {
-      const photos = document.querySelectorAll('.portrait-photos img');
-      if (photos.length) {
-        let current = 0;
+document.querySelectorAll('.portrait-photos').forEach(gallery => {
+
+    const photos = gallery.querySelectorAll('img');
+
+    if (photos.length <= 1) return;
+
+    let current = 0;
+    photos[current].classList.add('is-active');
+
+    setInterval(() => {
+
+        photos[current].classList.remove('is-active');
+
+        current = (current + 1) % photos.length;
+
         photos[current].classList.add('is-active');
-        setInterval(function () {
-          photos[current].classList.remove('is-active');
-          current = (current + 1) % photos.length;
-          photos[current].classList.add('is-active');
-        }, 3500);
-      }
-    })();
+
+    }, 3500);
+
+});
 
     window.addEventListener('load', function () {
       if (window.QRCode && document.getElementById('qrcode')) {
