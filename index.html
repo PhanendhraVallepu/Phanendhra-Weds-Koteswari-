@@ -622,6 +622,18 @@
       color: #f5f1eb;
       box-shadow: var(--shadow-md);
     }
+.whatsapp-fab {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background: #25d366;
+  color: white;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
 
     .reveal {
       opacity: 0;
@@ -648,6 +660,17 @@
     align-items:center;
     padding:1rem 0;
 }
+  .fab{
+    left:auto;
+    right:12px;
+    bottom:12px;
+
+    width:auto;
+    min-height:40px;
+
+    padding:0.55rem 0.8rem;
+    font-size:.82rem;
+  }
 
 .header-actions{
     width:100%;
@@ -776,6 +799,13 @@ select{
     height:450px;
     filter:blur(45px);
 }
+  .whatsapp-fab {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+    right: 12px;
+    bottom: 12px;
+  }
 
 }
 
@@ -794,7 +824,13 @@ select{
       .theme-toggle,
       .text-link { width: 100%; justify-content: center; text-align: center; }
       .hero-actions { flex-direction: column; }
-      .fab { left: 1rem; right: 1rem; text-align: center; }
+.fab{
+    right:12px;
+    left:auto;
+    bottom:12px;
+text-align:center;
+}
+
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1067,8 +1103,14 @@ body{background:#111!important;}
   <source src="./jashn_e_bahara_flute.mp3" type="audio/mpeg">
 </audio>
 
-  <a class="fab" id="whatsappFab" href="https://wa.me/919966022016?text=Hello%20I%20would%20like%20to%20RSVP" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
-
+<a
+  class="fab whatsapp-fab"
+  href="https://wa.me/919966022016?text=Hello%20I%20would%20like%20to%20RSVP"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp">
+  💬
+</a>
   <script>
     (function () {
       const root = document.documentElement;
