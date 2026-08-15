@@ -925,7 +925,9 @@ body{background:#111!important;}
           <div class="portrait" role="img" aria-label="Temple wedding portrait background">
             <div class="portrait-note">Sacred celebrations</div>
             <div class="portrait-photos" aria-hidden="true">
-              <img src="./main1.webp" alt="image 1"class="is-active">            </div>
+              <img src="./main1.webp" alt="image 1"class="is-active">
+	      <img src="./image1.webp" alt="image 1"class="is-active"> 
+           </div>
           </div>
         </div>
       </div>
@@ -1037,6 +1039,7 @@ body{background:#111!important;}
 	      <img src="./main1.webp" alt="image 2">
 	      <img src="./image1.webp" alt="image 3">
 	      <img src="./image2.webp" alt="image 4">
+              <img src="./image3.webp" alt="image 5">
             </div>
           </div>
         </div>
@@ -1099,7 +1102,7 @@ body{background:#111!important;}
     <p>With love, gratitude, and the blessings of our families, we look forward to celebrating with you.</p>
   </footer>
 
-<audio id="bgMusic" loop autoplay preload="auto" playsinline>
+<audio id="bgMusic" loop preload="auto" playsinline>
   <source src="./jashn_e_bahara_flute.mp3" type="audio/mpeg">
 </audio>
 
@@ -1214,53 +1217,73 @@ document.querySelectorAll('.portrait-photos').forEach(gallery => {
     });
 
     const music = document.getElementById('bgMusic');
-    const musicToggle = document.getElementById('musicToggle');
-    function updateMusicButton() {
-      if (!music || !musicToggle) return;
-      const playing = !music.paused;
-      musicToggle.textContent = playing ? 'Pause music' : 'Play music';
-      musicToggle.classList.toggle('is-playing', playing);
-      musicToggle.setAttribute('aria-pressed', playing ? 'true' : 'false');
+const musicToggle = document.getElementById('musicToggle');
+
+function updateMusicButton() {
+  if (!music || !musicToggle) return;
+
+  const playing = !music.paused;
+
+  musicToggle.textContent = playing ? 'Pause music' : 'Play music';
+  musicToggle.classList.toggle('is-playing', playing);
+  musicToggle.setAttribute('aria-pressed', playing);
+}
+
+function fadeMusic() {
+  let v = 0;
+  music.volume = 0;
+
+  const f = setInterval(() => {
+    v += 0.02;
+    music.volume = Math.min(v, 0.35);
+
+    if (v >= 0.35) {
+      clearInterval(f);
     }
-    if (music) {
-      music.volume=0;
-function fadeMusic(){let v=0;const f=setInterval(()=>{v+=0.02;music.volume=Math.min(v,.35);if(v>=.35)clearInterval(f);},120);}
-      music.autoplay = true;
-      music.muted = false;
-      music.addEventListener('play', updateMusicButton);
-      music.addEventListener('pause', updateMusicButton);
-      const tryAutoplay = async () => {
-        try {
-          await music.play(); fadeMusic();
-        } catch (e) {
-          updateMusicButton();
-        }
-      };
-      if (document.readyState === 'complete') {
-        tryAutoplay();
-      } else {
-        window.addEventListener('load', tryAutoplay, { once: true });
-      }
-      ['click','touchstart','keydown','scroll','mousemove'].forEach(evt=>{
-        window.addEventListener(evt, function starter() {
-          if (music.paused) music.play().catch(() => {});
-          updateMusicButton();
-          window.removeEventListener(evt, starter);
-        }, { once: true });
-      });
+  }, 120);
+}
+
+
+if (music) {
+
+  music.volume = 0;
+  music.addEventListener('play', updateMusicButton);
+  music.addEventListener('pause', updateMusicButton);
+
+
+  // Start only after real user interaction
+  const startMusic = async () => {
+    try {
+      await music.play();
+      fadeMusic();
+    } catch (e) {
+      console.log("Autoplay blocked:", e);
     }
-    musicToggle?.addEventListener('click', async function () {
-      if (!music) return;
-      try {
-        if (music.paused) {
-          await music.play(); fadeMusic();
-        } else {
-          music.pause();
-        }
-      } catch (e) {}
-      updateMusicButton();
-    });
+
     updateMusicButton();
+  };
+
+
+  document.addEventListener('click', startMusic, { once:true });
+  document.addEventListener('touchstart', startMusic, { once:true });
+
+
+  musicToggle?.addEventListener('click', async () => {
+
+    if (music.paused) {
+      await music.play();
+      fadeMusic();
+    } else {
+      music.pause();
+    }
+
+    updateMusicButton();
+  });
+
+}
+
+
+updateMusicButton();
 
     const canvas = document.getElementById('fireworksCanvas');
     if (canvas) {
