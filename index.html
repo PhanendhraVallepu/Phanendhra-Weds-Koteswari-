@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Naga Phanendhra & Koteswari | Wedding Invitation</title>
-
-  <meta
-    name="description"
-    content="Wedding invitation for Koteswari and Naga Phanendhra"
-  />
-
+  <title>Naga Phanendhra & Koteswari Wedding Invitation</title>
+  <meta name="description" content="Wedding invitation for Koteswari and Naga Phanendhra">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
-  </script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
-
-    /* =========================================================
-       ROOT VARIABLES
-       ========================================================= */
-
+    /* ROOT VARIABLES */
     :root {
-
       --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
       --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
       --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
       --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
       --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
       --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.75rem);
-
       --space-1: 0.25rem;
       --space-2: 0.5rem;
       --space-3: 0.75rem;
@@ -51,3945 +30,1366 @@
       --space-16: 4rem;
       --space-20: 5rem;
       --space-24: 6rem;
-
       --radius-sm: 0.5rem;
       --radius-md: 0.875rem;
       --radius-lg: 1.5rem;
       --radius-xl: 2rem;
-
-      --shadow-sm:
-        0 1px 2px rgba(43, 33, 24, 0.08);
-
-      --shadow-md:
-        0 20px 60px rgba(43, 33, 24, 0.12);
-
-      --shadow-lg:
-        0 30px 80px rgba(30, 21, 15, 0.18);
-
-      --transition:
-        220ms cubic-bezier(0.16, 1, 0.3, 1);
-
-      --font-display:
-        'Cormorant Garamond',
-        Georgia,
-        serif;
-
-      --font-body:
-        'Manrope',
-        Arial,
-        sans-serif;
+      --shadow-sm: 0 1px 2px rgba(43, 33, 24, 0.08);
+      --shadow-md: 0 20px 60px rgba(43, 33, 24, 0.12);
+      --shadow-lg: 0 30px 80px rgba(30, 21, 15, 0.18);
+      --transition: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', Arial, sans-serif;
     }
 
-
-    /* =========================================================
-       THEME
-       ========================================================= */
-
-    :root,
-    [data-theme="light"] {
-
+    /* THEME */
+    :root, [data-theme="light"] {
       --color-bg: #f7f3ee;
       --color-surface: #fcfaf7;
       --color-surface-2: #f1e9df;
-
-      --color-border:
-        rgba(63, 47, 34, 0.12);
-
-      --color-divider:
-        rgba(63, 47, 34, 0.16);
-
-      --color-text:
-        #241b14;
-
-      --color-text-muted:
-        #6f6256;
-
-      --color-text-faint:
-        #9f9285;
-
-      --color-primary:
-        #b08d57;
-
-      --color-primary-hover:
-        #d4af37;
-
-      --color-accent:
-        #31463b;
-
-      --color-accent-soft:
-        rgba(49, 70, 59, 0.08);
-
-      --color-inverse:
-        #fffaf4;
+      --color-border: rgba(63, 47, 34, 0.12);
+      --color-divider: rgba(63, 47, 34, 0.16);
+      --color-text: #241b14;
+      --color-text-muted: #6f6256;
+      --color-text-faint: #9f9285;
+      --color-primary: #b08d57;
+      --color-primary-hover: #d4af37;
+      --color-accent: #31463b;
+      --color-accent-soft: rgba(49, 70, 59, 0.08);
+      --color-inverse: #fffaf4;
     }
-
-
     [data-theme="dark"] {
-
       --color-bg: #3a2a20;
-
       --color-surface: #4b3425;
-
       --color-surface-2: #5a3e2c;
-
-      --color-border:
-        rgba(255, 225, 185, 0.16);
-
-      --color-divider:
-        rgba(255, 225, 185, 0.2);
-
-      --color-text:
-        #f7ead8;
-
-      --color-text-muted:
-        #d7c2aa;
-
-      --color-text-faint:
-        #b39b83;
-
-      --color-primary:
-        #d7b38f;
-
-      --color-primary-hover:
-        #e6c28e;
-
-      --color-accent:
-        #9db4a8;
-
-      --color-accent-soft:
-        rgba(157, 180, 168, 0.1);
-
-      --color-inverse:
-        #211711;
+      --color-border: rgba(255, 225, 185, 0.16);
+      --color-divider: rgba(255, 225, 185, 0.2);
+      --color-text: #f7ead8;
+      --color-text-muted: #d7c2aa;
+      --color-text-faint: #b39b83;
+      --color-primary: #d7b38f;
+      --color-primary-hover: #e6c28e;
+      --color-accent: #9db4a8;
+      --color-accent-soft: rgba(157, 180, 168, 0.1);
+      --color-inverse: #211711;
     }
 
-
-    /* =========================================================
-       RESET
-       ========================================================= */
-
-    * {
-      box-sizing: border-box;
+    /* RESET */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; color-scheme: dark; }
+    body {
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      color: var(--color-text);
+      background: #3a2a20 !important;
+      overflow-x: hidden;
+      position: relative;
       margin: 0;
       padding: 0;
     }
-
-    html {
-      scroll-behavior: smooth;
-      color-scheme: dark;
-    }
-
-    body {
-
-      min-height: 100vh;
-
-      font-family:
-        var(--font-body);
-
-      font-size:
-        var(--text-base);
-
-      line-height: 1.65;
-
-      color:
-        var(--color-text);
-
-      background:
-        #3a2a20 !important;
-
-      overflow-x: hidden;
-
-      position: relative;
-    }
-
-
-    img,
-    svg,
-    canvas {
-      display: block;
-      max-width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
-      color: inherit;
-    }
-
-    button {
-      cursor: pointer;
-      border: 0;
-      background: none;
-    }
-
-    :focus-visible {
+    img, svg, canvas { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; color: inherit; }
+    button { cursor: pointer; border: 0; background: none; }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
       outline: 2px solid var(--color-primary);
       outline-offset: 3px;
       border-radius: var(--radius-sm);
     }
+    ::selection { background: rgba(212, 175, 55, 0.22); }
 
-    ::selection {
-      background:
-        rgba(212, 175, 55, 0.22);
-    }
-
-
-    /* =========================================================
-       FULL PAGE BACKGROUND
-       ========================================================= */
-
+    /* FULL PAGE BACKGROUND */
     .bg-image {
-
       position: fixed;
-
       inset: 0;
-
       width: 100%;
       height: 100%;
-
       object-fit: cover;
-
-      object-position:
-        center center;
-
+      object-position: center center;
       z-index: -3;
-
-      filter:
-        saturate(0.92)
-        brightness(0.82);
+      filter: saturate(0.92) brightness(0.82);
     }
-
-
     .bg-overlay {
-
       position: fixed;
-
       inset: 0;
-
       z-index: -2;
-
       pointer-events: none;
-
       background:
-
-        radial-gradient(
-          circle at 50% 15%,
-          rgba(255, 220, 165, 0.25),
-          transparent 42%
-        ),
-
-        linear-gradient(
-          180deg,
-          rgba(48, 31, 21, 0.22),
-          rgba(38, 26, 19, 0.48)
-        );
+        radial-gradient(circle at 50% 15%, rgba(255, 220, 165, 0.25), transparent 42%),
+        linear-gradient(180deg, rgba(48, 31, 21, 0.22), rgba(38, 26, 19, 0.48));
     }
-
-
     body::before {
-
-      content: "";
-
+      content: '';
       position: fixed;
-
       inset: 0;
-
       z-index: -1;
-
       pointer-events: none;
-
       background:
-
-        radial-gradient(
-          circle at 50% 15%,
-          rgba(212, 175, 55, 0.12),
-          transparent 38%
-        ),
-
-        radial-gradient(
-          circle at 15% 70%,
-          rgba(180, 130, 75, 0.08),
-          transparent 35%
-        ),
-
-        radial-gradient(
-          circle at 85% 70%,
-          rgba(180, 130, 75, 0.08),
-          transparent 35%
-        );
+        radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.12), transparent 38%),
+        radial-gradient(circle at 15% 70%, rgba(180, 130, 75, 0.08), transparent 35%),
+        radial-gradient(circle at 85% 70%, rgba(180, 130, 75, 0.08), transparent 35%);
     }
 
-
-    /* =========================================================
-       SKIP LINK
-       ========================================================= */
-
+    /* SKIP LINK */
     .skip-link {
-
       position: absolute;
-
       left: 1rem;
       top: -3rem;
-
-      background:
-        var(--color-text);
-
-      color:
-        var(--color-inverse);
-
-      padding:
-        0.75rem 1rem;
-
+      background: var(--color-text);
+      color: var(--color-inverse);
+      padding: 0.75rem 1rem;
       z-index: 1000;
-
-      border-radius:
-        var(--radius-sm);
+      border-radius: var(--radius-sm);
     }
+    .skip-link:focus { top: 1rem; }
 
-    .skip-link:focus {
-      top: 1rem;
-    }
-
-
-    /* =========================================================
-       SHELL
-       ========================================================= */
-
+    /* SHELL */
     .shell {
-
-      width:
-        min(1180px, calc(100% - 2rem));
-
-      margin:
-        0 auto;
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
     }
 
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
-
+    /* HEADER */
     .site-header {
-
       position: sticky;
-
       top: 0;
-
       z-index: 50;
-
-      backdrop-filter:
-        blur(20px)
-        saturate(120%);
-
-      -webkit-backdrop-filter:
-        blur(20px)
-        saturate(120%);
-
-      background:
-        rgba(48, 32, 23, 0.62) !important;
-
-      border-bottom:
-        1px solid rgba(255, 225, 185, 0.14);
+      backdrop-filter: blur(20px) saturate(120%);
+      -webkit-backdrop-filter: blur(20px) saturate(120%);
+      background: rgba(48, 32, 23, 0.62) !important;
+      border-bottom: 1px solid rgba(255, 225, 185, 0.14);
     }
-
-
     .header-inner {
-
       min-height: 76px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: var(--space-4);
     }
-
-
     .brand {
-
       display: flex;
-
       align-items: center;
-
       gap: var(--space-3);
-
       min-width: 0;
     }
-
-
     .brand-mark {
-
       width: 42px;
       height: 42px;
-
       border-radius: 50%;
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18);
-
+      border: 1px solid rgba(255, 225, 185, 0.18);
       display: grid;
-
       place-items: center;
-
-      background:
-        rgba(80, 55, 38, 0.58);
-
-      box-shadow:
-        var(--shadow-sm);
-
-      color:
-        var(--color-primary);
-
-      backdrop-filter:
-        blur(12px);
-
+      background: rgba(80, 55, 38, 0.58);
+      box-shadow: var(--shadow-sm);
+      color: var(--color-primary);
+      backdrop-filter: blur(12px);
       flex-shrink: 0;
     }
-
-
     .brand-text strong {
-
       display: block;
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        1.35rem;
-
-      font-weight:
-        600;
-
-      color:
-        #f8ead8;
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #f8ead8;
     }
-
-
     .header-actions {
-
       display: flex;
-
       align-items: center;
-
       gap: 0.75rem;
-
       flex-wrap: wrap;
-
       justify-content: flex-end;
     }
-
-
-    .theme-toggle,
-    .text-link,
-    .music-toggle {
-
+    .theme-toggle, .text-link, .music-toggle {
       min-height: 44px;
-
-      padding:
-        0.75rem 1rem;
-
-      border:
-        1px solid rgba(255, 225, 185, 0.16);
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(65, 44, 30, 0.55);
-
-      transition:
-        transform var(--transition),
-        border-color var(--transition),
-        background var(--transition);
-
-      backdrop-filter:
-        blur(10px);
+      padding: 0.75rem 1rem;
+      border: 1px solid rgba(255, 225, 185, 0.16);
+      border-radius: 999px;
+      background: rgba(65, 44, 30, 0.55);
+      transition: transform var(--transition), border-color var(--transition), background var(--transition);
+      backdrop-filter: blur(10px);
     }
-
-
-    .theme-toggle:hover,
-    .text-link:hover,
-    .music-toggle:hover {
-
-      transform:
-        translateY(-1px);
-
-      border-color:
-        rgba(255, 225, 185, 0.28);
+    .theme-toggle:hover, .text-link:hover, .music-toggle:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 225, 185, 0.28);
     }
-
-
     .music-toggle.is-playing {
-
-      background:
-        var(--color-text);
-
-      color:
-        var(--color-inverse);
-
-      border-color:
-        transparent;
+      background: var(--color-text);
+      color: var(--color-inverse);
+      border-color: transparent;
     }
 
-
-    /* =========================================================
-       HERO
-       ========================================================= */
-
+    /* HERO */
     .hero {
-
-      padding:
-        clamp(4.5rem, 8vw, 7rem)
-        0
-        clamp(3.5rem, 7vw, 6rem);
-
+      padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3.5rem, 7vw, 6rem);
       position: relative;
-
       overflow: clip;
-
-      background:
-        transparent;
+      background: transparent;
     }
-
-
     .hero::before {
-
-      content: "";
-
+      content: '';
       position: absolute;
-
       top: -300px;
-
       left: 50%;
-
-      transform:
-        translateX(-50%);
-
+      transform: translateX(-50%);
       width: 900px;
       height: 900px;
-
-      background:
-        radial-gradient(
-          circle,
-          rgba(255, 221, 140, 0.24),
-          transparent 70%
-        );
-
-      filter:
-        blur(80px);
-
+      background: radial-gradient(circle, rgba(255, 221, 140, 0.24), transparent 70%);
+      filter: blur(80px);
       pointer-events: none;
-
       z-index: 0;
     }
-
-
     .hero-grid {
-
       display: grid;
-
-      grid-template-columns:
-        1.1fr 0.9fr;
-
-      gap:
-        clamp(2rem, 5vw, 5rem);
-
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(2rem, 5vw, 5rem);
       align-items: center;
-
       position: relative;
-
       z-index: 1;
     }
-
-
     .eyebrow {
-
       display: inline-block;
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.24em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        var(--color-text-muted);
-
-      margin-bottom:
-        var(--space-4);
+      font-size: var(--text-xs);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
     }
-
-
     .hero h1 {
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        var(--text-2xl);
-
-      line-height:
-        0.96;
-
-      font-weight:
-        600;
-
-      letter-spacing:
-        -0.02em;
-
-      color:
-        #fff8e7;
-
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      line-height: 0.96;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff8e7;
       text-shadow:
         0 0 12px rgba(255, 230, 170, 0.45),
         0 0 25px rgba(212, 175, 55, 0.35),
         0 6px 25px rgba(0, 0, 0, 0.45);
     }
-
-
     .hero .ampersand {
-
       display: inline-block;
-
-      margin:
-        0 0.15em;
-
-      color:
-        #d4af37;
-
-      font-style:
-        italic;
+      margin: 0 0.15em;
+      color: #d4af37;
+      font-style: italic;
     }
-
-
     .hero-copy p {
-
-      margin-top:
-        var(--space-5);
-
-      max-width:
-        56ch;
-
-      color:
-        #e3d0bb;
+      margin-top: var(--space-5);
+      max-width: 56ch;
+      color: #e3d0bb;
     }
 
-
-    /* =========================================================
-       HERO META
-       ========================================================= */
-
+    /* HERO META */
     .hero-meta {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-      gap:
-        var(--space-4);
-
-      margin-top:
-        var(--space-8);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
     }
-
-
     .meta-card {
-
-      padding:
-        var(--space-4);
-
-      background:
-        rgba(70, 48, 34, 0.42);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.16);
-
-      backdrop-filter:
-        blur(16px);
-
-      border-radius:
-        var(--radius-md);
-
-      box-shadow:
-        var(--shadow-sm);
+      padding: var(--space-4);
+      background: rgba(70, 48, 34, 0.42);
+      border: 1px solid rgba(255, 225, 185, 0.16);
+      backdrop-filter: blur(16px);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
     }
-
-
     .meta-card span {
-
       display: block;
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.18em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        var(--color-text-faint);
-
-      margin-bottom:
-        0.35rem;
+      font-size: var(--text-xs);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: 0.35rem;
     }
-
-
     .meta-card strong {
-
-      font-size:
-        var(--text-sm);
-
-      line-height:
-        1.5;
+      font-size: var(--text-sm);
+      line-height: 1.5;
     }
 
-
-    /* =========================================================
-       BUTTONS
-       ========================================================= */
-
+    /* BUTTONS */
     .hero-actions {
-
       display: flex;
-
-      gap:
-        var(--space-3);
-
+      gap: var(--space-3);
       flex-wrap: wrap;
-
-      margin-top:
-        var(--space-8);
+      margin-top: var(--space-8);
     }
-
-
     .button {
-
-      min-height:
-        46px;
-
-      padding:
-        0.9rem 1.25rem;
-
-      border-radius:
-        999px;
-
-      border:
-        1px solid transparent;
-
-      transition:
-        transform var(--transition),
-        background var(--transition),
-        border-color var(--transition),
-        color var(--transition);
+      min-height: 46px;
+      padding: 0.9rem 1.25rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
     }
-
-
     .button-primary {
-
-      background:
-        #b08d57 !important;
-
-      color:
-        #211711 !important;
-
-      box-shadow:
-        0 8px 25px rgba(176, 141, 87, 0.22);
+      background: #b08d57 !important;
+      color: #211711 !important;
+      box-shadow: 0 8px 25px rgba(176, 141, 87, 0.22);
     }
-
-
     .button-primary:hover {
-
-      transform:
-        translateY(-1px);
-
-      background:
-        #d4af37 !important;
+      transform: translateY(-1px);
+      background: #d4af37 !important;
     }
-
-
     .button-secondary {
-
-      background:
-        rgba(60, 42, 29, 0.45);
-
-      border-color:
-        rgba(255, 225, 185, 0.18);
+      background: rgba(60, 42, 29, 0.45);
+      border-color: rgba(255, 225, 185, 0.18);
     }
-
-
     .button-secondary:hover {
-
-      transform:
-        translateY(-1px);
-
-      background:
-        rgba(90, 62, 42, 0.62);
+      transform: translateY(-1px);
+      background: rgba(90, 62, 42, 0.62);
     }
 
-
-    /* =========================================================
-       HERO IMAGE FRAME
-       ========================================================= */
-
+    /* HERO IMAGE FRAME */
     .hero-frame {
-
-      background:
-        rgba(70, 48, 34, 0.42) !important;
-
-      backdrop-filter:
-        blur(22px)
-        saturate(120%) !important;
-
-      -webkit-backdrop-filter:
-        blur(22px)
-        saturate(120%);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18) !important;
-
-      border-radius:
-        var(--radius-xl);
-
-      padding:
-        clamp(1rem, 3vw, 1.5rem);
-
+      background: rgba(70, 48, 34, 0.42) !important;
+      backdrop-filter: blur(22px) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      border: 1px solid rgba(255, 225, 185, 0.18) !important;
+      border-radius: var(--radius-xl);
+      padding: clamp(1rem, 3vw, 1.5rem);
       box-shadow:
         0 30px 80px rgba(20, 12, 7, 0.25),
         inset 0 1px 0 rgba(255, 240, 215, 0.08);
-
       position: relative;
-
       overflow: hidden;
     }
-
-
     .hero-frame::before {
-
-      content: "";
-
+      content: '';
       position: absolute;
-
       inset: 1rem;
-
-      border:
-        1px solid rgba(212, 175, 55, 0.18);
-
-      border-radius:
-        calc(var(--radius-xl) - 0.6rem);
-
-      pointer-events:
-        none;
-
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      border-radius: calc(var(--radius-xl) - 0.6rem);
+      pointer-events: none;
       z-index: 3;
     }
 
-
-    /* =========================================================
-       IMAGE CONTAINERS
-       ========================================================= */
-
+    /* IMAGE CONTAINERS */
     .portrait {
-
       position: relative;
-
       width: 100%;
-
       min-height: 0 !important;
-
       height: auto !important;
-
       padding: 0 !important;
-
-      background:
-        rgba(35, 24, 17, 0.25);
-
+      background: rgba(35, 24, 17, 0.25);
       overflow: hidden;
-
-      border-radius:
-        calc(var(--radius-xl) - 0.8rem);
+      border-radius: calc(var(--radius-xl) - 0.8rem);
     }
-
-
     .portrait-photos {
-
       position: relative !important;
-
       inset: auto !important;
-
       width: 100%;
-
       height: auto;
-
       overflow: hidden;
-
-      border-radius:
-        calc(var(--radius-xl) - 0.8rem);
-
-      background:
-        rgba(35, 24, 17, 0.3);
+      border-radius: calc(var(--radius-xl) - 0.8rem);
+      background: rgba(35, 24, 17, 0.3);
     }
-
-
     .portrait-photos img {
-
       position: absolute;
-
       inset: 0;
-
       width: 100%;
-
       height: 100%;
-
-      object-fit:
-        contain !important;
-
-      object-position:
-        center center;
-
+      object-fit: contain !important;
+      object-position: center center;
       opacity: 0;
-
-      transition:
-        opacity 800ms ease-in-out;
-
-      background:
-        rgba(35, 24, 17, 0.25);
+      transition: opacity 800ms ease-in-out;
+      background: rgba(35, 24, 17, 0.25);
     }
-
-
-    .portrait-photos img:first-child {
-
-      position: relative;
-    }
-
-
-    .portrait-photos img.is-active {
-
-      opacity: 1;
-    }
-
-
+    .portrait-photos img:first-child { position: relative; }
+    .portrait-photos img.is-active { opacity: 1; }
     .portrait-note {
-
       position: absolute;
-
       left: 1rem;
-
       bottom: 1rem;
-
       z-index: 5;
-
-      background:
-        rgba(252, 250, 247, 0.78);
-
-      color:
-        #2a2017;
-
-      border:
-        1px solid rgba(63, 47, 34, 0.12);
-
-      border-radius:
-        999px;
-
-      padding:
-        0.65rem 0.9rem;
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.14em;
-
-      text-transform:
-        uppercase;
-
-      backdrop-filter:
-        blur(12px);
+      background: rgba(252, 250, 247, 0.78);
+      color: #2a2017;
+      border: 1px solid rgba(63, 47, 34, 0.12);
+      border-radius: 999px;
+      padding: 0.65rem 0.9rem;
+      font-size: var(--text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      backdrop-filter: blur(12px);
     }
 
-
-    /* =========================================================
-       SECTIONS
-       ========================================================= */
-
+    /* SECTIONS */
     .section {
-
-      padding:
-        clamp(3.5rem, 7vw, 6rem) 0;
+      padding: clamp(3.5rem, 7vw, 6rem) 0;
     }
-
-
     .section-head {
-
-      max-width:
-        44rem;
-
-      margin:
-        0 auto 2rem;
-
-      text-align:
-        center;
+      max-width: 44rem;
+      margin: 0 auto 2rem;
+      text-align: center;
     }
-
-
     .section-head h2 {
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        var(--text-xl);
-
-      font-weight:
-        600;
-
-      margin-bottom:
-        0.5rem;
-
-      color:
-        #fff0dc;
-
-      text-shadow:
-        0 3px 15px rgba(0,0,0,.3);
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff0dc;
+      text-shadow: 0 3px 15px rgba(0,0,0,.3);
     }
-
-
     .section-head p {
-
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
     }
-
-
     .divider {
-
       width: 96px;
-
       height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          #d4af37,
-          transparent
-        );
-
-      margin:
-        0 auto 1.25rem;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      margin: 0 auto 1.25rem;
     }
 
-
-    /* =========================================================
-       CARDS
-       ========================================================= */
-
+    /* CARDS - UPDATED FOR 5 ITEMS */
     .cards-3 {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-      gap:
-        var(--space-5);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-5);
     }
-
-
     .card {
-
-      background:
-        rgba(70, 48, 34, 0.42) !important;
-
-      backdrop-filter:
-        blur(22px)
-        saturate(120%) !important;
-
-      -webkit-backdrop-filter:
-        blur(22px)
-        saturate(120%);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18) !important;
-
-      border-radius:
-        var(--radius-lg);
-
-      padding:
-        clamp(1.25rem, 2.5vw, 1.8rem);
-
+      background: rgba(70, 48, 34, 0.42) !important;
+      backdrop-filter: blur(22px) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      border: 1px solid rgba(255, 225, 185, 0.18) !important;
+      border-radius: var(--radius-lg);
+      padding: clamp(1.25rem, 2.5vw, 1.8rem);
       box-shadow:
         0 20px 60px rgba(20, 12, 7, 0.18),
         inset 0 1px 0 rgba(255, 240, 215, 0.07);
-
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
     }
-
-
     .card:hover {
-
-      transform:
-        translateY(-4px);
-
-      box-shadow:
-        0 25px 65px rgba(20, 12, 7, 0.25);
-
-      border-color:
-        rgba(255, 225, 185, 0.28) !important;
+      transform: translateY(-4px);
+      box-shadow: 0 25px 65px rgba(20, 12, 7, 0.25);
+      border-color: rgba(255, 225, 185, 0.28) !important;
     }
-
-
     .card-kicker {
-
-      font-size:
-        var(--text-xs);
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        0.18em;
-
-      color:
-        var(--color-text-faint);
-
-      margin-bottom:
-        0.75rem;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--color-text-faint);
+      margin-bottom: 0.75rem;
     }
-
-
     .card h3 {
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        1.8rem;
-
-      font-weight:
-        600;
-
-      margin-bottom:
-        0.75rem;
-
-      color:
-        #f8ead8;
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #f8ead8;
     }
-
-
-    .card p,
-    .card li {
-
-      color:
-        var(--color-text-muted);
+    .card p, .card li {
+      color: var(--color-text-muted);
     }
-
-
     .card li a {
-
-      color:
-        #d7b38f;
-
-      text-decoration:
-        underline;
-
-      text-decoration-thickness:
-        1px;
-
-      text-underline-offset:
-        0.18em;
+      color: #d7b38f;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
     }
-
-
     .card li a:hover {
-
-      color:
-        #e6c28e;
+      color: #e6c28e;
     }
-
-
     .schedule-list {
-
       list-style: none;
-
       display: grid;
-
       gap: 0.75rem;
-
       margin-top: 1rem;
     }
-
-
     .schedule-list li {
-
-      padding-top:
-        0.75rem;
-
-      border-top:
-        1px solid rgba(255, 225, 185, 0.12);
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255, 225, 185, 0.12);
     }
 
-
-    /* =========================================================
-       COUNTDOWN
-       ========================================================= */
-
+    /* COUNTDOWN */
     .countdown-panel {
-
-      background:
-        rgba(70, 48, 34, 0.45) !important;
-
-      backdrop-filter:
-        blur(22px)
-        saturate(120%) !important;
-
-      -webkit-backdrop-filter:
-        blur(22px)
-        saturate(120%);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18) !important;
-
-      border-radius:
-        var(--radius-xl);
-
-      padding:
-        clamp(1.5rem, 4vw, 2.5rem);
-
-      box-shadow:
-        0 25px 65px rgba(20, 12, 7, 0.2);
+      background: rgba(70, 48, 34, 0.45) !important;
+      backdrop-filter: blur(22px) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      border: 1px solid rgba(255, 225, 185, 0.18) !important;
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      box-shadow: 0 25px 65px rgba(20, 12, 7, 0.2);
     }
-
-
     .countdown-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-      gap:
-        var(--space-4);
-
-      margin-top:
-        1.5rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-4);
+      margin-top: 1.5rem;
     }
-
-
     .countdown-box {
-
-      text-align:
-        center;
-
-      padding:
-        1.25rem 1rem;
-
-      border-radius:
-        var(--radius-md);
-
-      background:
-        rgba(60, 42, 29, 0.42);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.14);
-
-      backdrop-filter:
-        blur(12px);
+      text-align: center;
+      padding: 1.25rem 1rem;
+      border-radius: var(--radius-md);
+      background: rgba(60, 42, 29, 0.42);
+      border: 1px solid rgba(255, 225, 185, 0.14);
+      backdrop-filter: blur(12px);
     }
-
-
     .countdown-box strong {
-
       display: block;
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        clamp(2rem, 4vw, 3rem);
-
-      line-height:
-        1;
-
-      color:
-        #d7b38f;
-
-      font-weight:
-        600;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      color: #d7b38f;
+      font-weight: 600;
     }
-
-
     .countdown-box span {
-
       display: block;
-
-      margin-top:
-        0.5rem;
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.18em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        var(--color-text-faint);
+      margin-top: 0.5rem;
+      font-size: var(--text-xs);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
     }
 
-
-    /* =========================================================
-       RSVP
-       ========================================================= */
-
+    /* RSVP */
     .rsvp-layout {
-
       display: grid;
-
-      grid-template-columns:
-        1.15fr 0.85fr;
-
-      gap:
-        var(--space-5);
-
-      align-items:
-        start;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: var(--space-5);
+      align-items: start;
     }
-
-
     .panel {
-
-      background:
-        rgba(70, 48, 34, 0.42) !important;
-
-      backdrop-filter:
-        blur(22px)
-        saturate(120%) !important;
-
-      -webkit-backdrop-filter:
-        blur(22px)
-        saturate(120%);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18) !important;
-
-      border-radius:
-        var(--radius-xl);
-
-      padding:
-        clamp(1.5rem, 4vw, 2rem);
-
-      box-shadow:
-        0 25px 65px rgba(20, 12, 7, 0.2);
+      background: rgba(70, 48, 34, 0.42) !important;
+      backdrop-filter: blur(22px) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      border: 1px solid rgba(255, 225, 185, 0.18) !important;
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 2rem);
+      box-shadow: 0 25px 65px rgba(20, 12, 7, 0.2);
     }
-
-
     .panel h3 {
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        2rem;
-
-      margin-bottom:
-        0.5rem;
-
-      font-weight:
-        600;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
     }
-
-
     .panel p {
-
-      color:
-        var(--color-text-muted);
-
-      margin-bottom:
-        1.25rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
     }
-
-
     .form-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1rem;
     }
-
-
-    .field,
-    .field-full {
-
+    .field, .field-full {
       display: flex;
-
       flex-direction: column;
-
-      gap:
-        0.45rem;
+      gap: 0.45rem;
     }
-
-
-    .field-full {
-
-      grid-column:
-        1 / -1;
-    }
-
-
+    .field-full { grid-column: 1 / -1; }
     label {
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.16em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        var(--color-text-muted);
+      font-size: var(--text-xs);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
     }
-
-
-    input,
-    textarea,
-    select {
-
-      min-height:
-        48px;
-
-      width:
-        100%;
-
-      padding:
-        0.95rem 1rem;
-
-      border-radius:
-        1rem;
-
-      border:
-        1px solid rgba(255, 225, 185, 0.14);
-
-      background:
-        rgba(45, 31, 22, 0.45);
-
-      color:
-        #f8ead8;
-
+    input, textarea, select {
+      min-height: 48px;
+      width: 100%;
+      padding: 0.95rem 1rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 225, 185, 0.14);
+      background: rgba(45, 31, 22, 0.45);
+      color: #f8ead8;
       outline: none;
     }
-
-
-    input:focus,
-    textarea:focus,
-    select:focus {
-
-      border-color:
-        rgba(212, 175, 55, 0.55);
-
-      box-shadow:
-        0 0 0 3px rgba(212, 175, 55, 0.1);
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(212, 175, 55, 0.55);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
     }
-
-
     textarea {
-
-      min-height:
-        120px;
-
-      resize:
-        vertical;
+      min-height: 120px;
+      resize: vertical;
     }
-
-
     .form-note {
-
-      margin-top:
-        1rem;
-
-      font-size:
-        var(--text-sm);
-
-      color:
-        var(--color-text-faint);
+      margin-top: 1rem;
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
     }
 
-
-    /* =========================================================
-       FAMILY
-       ========================================================= */
-
+    /* FAMILY */
     .family-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-      gap:
-        var(--space-5);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-5);
     }
-
-
     .family-block {
-
-      background:
-        rgba(70, 48, 34, 0.42) !important;
-
-      backdrop-filter:
-        blur(22px)
-        saturate(120%) !important;
-
-      -webkit-backdrop-filter:
-        blur(22px)
-        saturate(120%);
-
-      border:
-        1px solid rgba(255, 225, 185, 0.18) !important;
-
-      border-radius:
-        var(--radius-lg);
-
-      padding:
-        1.75rem;
-
-      box-shadow:
-        0 20px 60px rgba(20, 12, 7, 0.18);
+      background: rgba(70, 48, 34, 0.42) !important;
+      backdrop-filter: blur(22px) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      border: 1px solid rgba(255, 225, 185, 0.18) !important;
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: 0 20px 60px rgba(20, 12, 7, 0.18);
     }
-
-
     .family-block h3 {
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        1.75rem;
-
-      margin-bottom:
-        1rem;
-
-      font-weight:
-        600;
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
     }
-
-
     .family-block dl {
-
-      display:
-        grid;
-
-      gap:
-        1rem;
+      display: grid;
+      gap: 1rem;
     }
-
-
     .family-block dt {
-
-      font-size:
-        var(--text-xs);
-
-      letter-spacing:
-        0.16em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        var(--color-text-faint);
-
-      margin-bottom:
-        0.25rem;
+      font-size: var(--text-xs);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: 0.25rem;
     }
-
-
     .family-block dd {
-
-      color:
-        var(--color-text-muted);
+      color: var(--color-text-muted);
     }
 
-
-    /* =========================================================
-       FOOTER
-       ========================================================= */
-
+    /* FOOTER */
     .footer {
-
-      padding:
-        3rem 0 4rem;
-
-      text-align:
-        center;
-
-      color:
-        var(--color-text-muted);
+      padding: 3rem 0 4rem;
+      text-align: center;
+      color: var(--color-text-muted);
     }
-
-
     .footer strong {
-
-      display:
-        block;
-
-      font-family:
-        var(--font-display);
-
-      font-size:
-        2rem;
-
-      color:
-        var(--color-text);
-
-      margin-bottom:
-        0.5rem;
-
-      font-weight:
-        600;
+      display: block;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
     }
 
-
-    /* =========================================================
-       WHATSAPP BUTTON
-       ========================================================= */
-
+    /* WHATSAPP BUTTON */
     .fab {
-
       position: fixed;
-
       right: 1rem;
-
       bottom: 1rem;
-
       z-index: 80;
     }
-
-
     .whatsapp-fab {
-
       width: 56px;
       height: 56px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       border-radius: 50%;
-
-      font-size:
-        1.5rem;
-
-      background:
-        #25d366;
-
-      color:
-        white;
-
-      box-shadow:
-        0 8px 20px rgba(37, 211, 102, 0.35);
+      font-size: 1.5rem;
+      background: #25d366;
+      color: white;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
     }
 
-
-    /* =========================================================
-       REVEAL ANIMATION
-       ========================================================= */
-
+    /* REVEAL ANIMATION */
     .reveal {
-
       opacity: 0;
-
-      transform:
-        translateY(24px);
-
-      transition:
-        opacity 700ms ease,
-        transform 700ms ease;
+      transform: translateY(24px);
+      transition: opacity 700ms ease, transform 700ms ease;
     }
-
-
     .reveal.visible {
-
       opacity: 1;
-
-      transform:
-        translateY(0);
+      transform: translateY(0);
     }
 
-
-    /* =========================================================
-       FIREWORKS
-       ========================================================= */
-
+    /* FIREWORKS */
     .celebration-canvas {
-
       position: absolute;
-
       inset: 0;
-
       width: 100%;
       height: 100%;
-
       pointer-events: none;
-
       z-index: 2;
-
       opacity: 0.75;
-
-      mix-blend-mode:
-        screen;
+      mix-blend-mode: screen;
     }
 
-
-    /* =========================================================
-       PETALS
-       ========================================================= */
-
-    #petals {
-
+    /* PETALS */
+    .petals {
       position: fixed;
-
       inset: 0;
-
       pointer-events: none;
-
       overflow: hidden;
-
       z-index: 2;
     }
-
-
     .petal {
-
       position: absolute;
-
       top: -40px;
-
       font-size: 20px;
-
-      animation:
-        fall linear infinite;
-
+      animation: fall linear infinite;
       opacity: 0.8;
     }
-
-
     @keyframes fall {
-
       to {
-
-        transform:
-          translateY(110vh)
-          rotate(360deg);
+        transform: translateY(110vh) rotate(360deg);
       }
     }
 
-
-    /* =========================================================
-       TABLET
-       ========================================================= */
-
+    /* TABLET */
     @media (max-width: 980px) {
-
-      .hero-grid,
-      .rsvp-layout,
-      .cards-3,
-      .family-grid {
-
-        grid-template-columns:
-          1fr;
+      .hero-grid, .rsvp-layout, .family-grid {
+        grid-template-columns: 1fr;
       }
-
-
-      .hero h1 {
-
-        max-width:
-          none;
-      }
-
-
-      .hero-meta {
-
-        grid-template-columns:
-          1fr;
-      }
-    }
-
-
-    /* =========================================================
-       MOBILE
-       ========================================================= */
-
-    @media (max-width: 768px) {
-
-      .header-inner {
-
-        flex-direction:
-          column;
-
-        align-items:
-          center;
-
-        padding:
-          1rem 0;
-      }
-
-
-      .header-actions {
-
-        width:
-          100%;
-
-        justify-content:
-          center;
-
-        gap:
-          0.5rem;
-      }
-
-
-      .header-actions > * {
-
-        flex:
-          1;
-      }
-
-
-      .hero {
-
-        padding:
-          2.5rem 0 3rem;
-      }
-
-
-      .hero-grid {
-
-        display:
-          flex;
-
-        flex-direction:
-          column;
-
-        gap:
-          1.5rem;
-      }
-
-
-      .hero h1 {
-
-        font-size:
-          clamp(2.5rem, 11vw, 4rem);
-
-        line-height:
-          1.05;
-
-        text-align:
-          center;
-      }
-
-
-      .hero-copy {
-
-        text-align:
-          center;
-      }
-
-
-      .hero-copy p {
-
-        max-width:
-          100%;
-      }
-
-
-      .hero-meta {
-
-        grid-template-columns:
-          1fr;
-      }
-
-
-      .hero-actions {
-
-        width:
-          100%;
-
-        flex-direction:
-          column;
-      }
-
-
-      .hero-actions .button {
-
-        width:
-          100%;
-
-        text-align:
-          center;
-      }
-
-
-      .hero-frame {
-
-        width:
-          100%;
-
-        padding:
-          10px;
-      }
-
-
-      .portrait {
-
-        width:
-          100%;
-      }
-
-
+      .hero h1 { max-width: none; }
+      .hero-meta { grid-template-columns: 1fr; }
+      /* 5 cards: 2 rows on tablet */
       .cards-3 {
-
-        gap:
-          1rem;
-      }
-
-
-      .card {
-
-        padding:
-          1.2rem;
-      }
-
-
-      .card h3 {
-
-        font-size:
-          1.5rem;
-      }
-
-
-      .section {
-
-        padding:
-          3rem 0;
-      }
-
-
-      .panel,
-      .card,
-      .family-block {
-
-        padding:
-          1.25rem;
-      }
-
-
-      .countdown-grid {
-
-        grid-template-columns:
-          repeat(2, 1fr);
-      }
-
-
-      .countdown-box strong {
-
-        font-size:
-          2rem;
-      }
-
-
-      input,
-      textarea,
-      select {
-
-        font-size:
-          16px;
-      }
-
-
-      .button {
-
-        min-height:
-          52px;
-      }
-
-
-      .text-link,
-      .music-toggle {
-
-        min-height:
-          48px;
-
-        text-align:
-          center;
-      }
-
-
-      .whatsapp-fab {
-
-        width:
-          48px;
-
-        height:
-          48px;
-
-        font-size:
-          1.3rem;
-
-        right:
-          12px;
-
-        bottom:
-          12px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
-
-    /* =========================================================
-       SMALL MOBILE
-       ========================================================= */
-
-    @media (max-width: 520px) {
-
-      .shell {
-
-        width:
-          min(100% - 1.25rem, 1180px);
-      }
-
-
+    /* MOBILE */
+    @media (max-width: 768px) {
       .header-inner {
-
-        padding:
-          0.75rem 0;
-
-        align-items:
-          center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
       }
-
-
       .header-actions {
-
-        width:
-          100%;
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        flex: 1;
       }
-
-
-      .countdown-grid,
-      .form-grid {
-
-        grid-template-columns:
-          1fr;
+      .hero { padding: 2.5rem 0 3rem; }
+      .hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
       }
-
-
-      .button,
-      .theme-toggle,
-      .text-link,
-      .music-toggle {
-
-        width:
-          100%;
-
-        justify-content:
-          center;
-
-        text-align:
-          center;
-      }
-
-
       .hero h1 {
-
-        font-size:
-          clamp(2.5rem, 13vw, 3.5rem);
+        font-size: clamp(2.5rem, 11vw, 4rem);
+        line-height: 1.05;
+        text-align: center;
       }
-
-
-      .brand-text strong {
-
-        font-size:
-          1.15rem;
-
-        text-align:
-          center;
+      .hero-copy { text-align: center; }
+      .hero-copy p { max-width: 100%; }
+      .hero-meta { grid-template-columns: 1fr; }
+      .hero-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+      .hero-actions .button {
+        width: 100%;
+        text-align: center;
+      }
+      .hero-frame {
+        width: 100%;
+        padding: 10px;
+      }
+      .portrait { width: 100%; }
+      .cards-3 {
+        gap: 1rem;
+        grid-template-columns: 1fr; /* stack all 5 cards on mobile */
+      }
+      .card { padding: 1.2rem; }
+      .card h3 { font-size: 1.5rem; }
+      .section { padding: 3rem 0; }
+      .panel, .card, .family-block { padding: 1.25rem; }
+      .countdown-grid { grid-template-columns: repeat(2, 1fr); }
+      .countdown-box strong { font-size: 2rem; }
+      input, textarea, select { font-size: 16px; }
+      .button { min-height: 52px; }
+      .text-link, .music-toggle {
+        min-height: 48px;
+        text-align: center;
+      }
+      .whatsapp-fab {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+        right: 12px;
+        bottom: 12px;
       }
     }
 
+    /* SMALL MOBILE */
+    @media (max-width: 520px) {
+      .shell { width: min(100% - 1.25rem, 1180px); }
+      .header-inner { padding: 0.75rem 0; align-items: center; }
+      .header-actions { width: 100%; }
+      .countdown-grid, .form-grid { grid-template-columns: 1fr; }
+      .button, .theme-toggle, .text-link, .music-toggle {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 { font-size: clamp(2.5rem, 13vw, 3.5rem); }
+      .brand-text strong { font-size: 1.15rem; text-align: center; }
+    }
 
-    /* =========================================================
-       REDUCED MOTION
-       ========================================================= */
-
+    /* REDUCED MOTION */
     @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-
-        animation-duration:
-          0.01ms !important;
-
-        animation-iteration-count:
-          1 !important;
-
-        transition-duration:
-          0.01ms !important;
-
-        scroll-behavior:
-          auto !important;
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
       }
     }
-
   </style>
   <script>
-  window.va = window.va || function () {
-    (window.vaq = window.vaq || []).push(arguments);
-  };
-</script>
-
-<script defer src="/_vercel/insights/script.js"></script>
+    window.va = window.va || function() { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
-
-
 <body>
+  <!-- BACKGROUND -->
+  <img class="bg-image" src=".bg.webp" alt="" aria-hidden="true">
+  <div class="bg-overlay" aria-hidden="true"></div>
 
-  <!-- =======================================================
-       BACKGROUND
-       ======================================================= -->
-
-  <img
-    class="bg-image"
-    src="./bg.webp"
-    alt=""
-    aria-hidden="true"
-  >
-
-  <div
-    class="bg-overlay"
-    aria-hidden="true">
-  </div>
-
-
-  <!-- =======================================================
-       HEADER
-       ======================================================= -->
-
+  <!-- HEADER -->
   <header class="site-header">
-
-    <div class="shell header-inner">
-
-      <div class="brand">
-
-        <div
-          class="brand-mark"
-          aria-hidden="true">
-
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.4">
-
-            <path
-              d="M12 3c2.8 2.3 4.2 4.6 4.2 6.9A4.2 4.2 0 1 1 7.8 10C7.8 7.6 9.2 5.3 12 3Z">
-            </path>
-
-            <path
-              d="M6 15c1.5 2.7 3.5 4 6 4s4.5-1.3 6-4">
-            </path>
-
-          </svg>
-
+    <div class="shell">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M12 3c2.8 2.3 4.2 4.6 4.2 6.9A4.2 4.2 0 1 1 7.8 10C7.8 7.6 9.2 5.3 12 3Z"/>
+              <path d="M6 15c1.5 2.7 3.5 4 6 4s4.5-1.3 6-4"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <strong>Naga Phanendhra &amp; Koteswari</strong>
+          </div>
         </div>
-
-
-        <div class="brand-text">
-
-          <strong>
-            Naga Phanendhra &amp; Koteswari
-          </strong>
-
+        <div class="header-actions">
+          <a class="text-link" href="#events">Events</a>
+          <a class="text-link" href="#rsvp">RSVP</a>
+          <button class="music-toggle is-playing" type="button" id="musicToggle" aria-pressed="true">Pause music</button>
         </div>
-
       </div>
-
-
-      <div class="header-actions">
-
-        <a
-          class="text-link"
-          href="#events">
-          Events
-        </a>
-
-        <a
-          class="text-link"
-          href="#rsvp">
-          RSVP
-        </a>
-
-        <button
-          class="music-toggle is-playing"
-          type="button"
-          id="musicToggle"
-          aria-pressed="true">
-
-          Pause music
-
-        </button>
-
-      </div>
-
     </div>
-
   </header>
 
-
-  <!-- =======================================================
-       MAIN
-       ======================================================= -->
-
+  <!-- MAIN -->
   <main id="main-content">
+    <canvas class="celebration-canvas site-fireworks" id="fireworksCanvas" aria-hidden="true"></canvas>
 
-
- <canvas class="celebration-canvas site-fireworks" id="fireworksCanvas" aria-hidden="true"></canvas>
-
-
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
-
+    <!-- HERO -->
     <section class="hero">
-
-      <div class="shell hero-grid">
-
-
-        <div class="hero-copy reveal">
-
-          <span class="eyebrow">
-            With the blessings of our families
-          </span>
-
-
-          <h1>
-            Koteswari
-            <span class="ampersand">&amp;</span>
-            Naga Phanendhra
-          </h1>
-
-
-          <p>
-            Together with love, tradition, and gratitude,
-            we invite you to celebrate our wedding and
-            the joyful gatherings that follow.
-          </p>
-
-
-          <div
-            class="hero-meta"
-            aria-label="Wedding details">
-
-            <div class="meta-card">
-
-              <span>Date</span>
-
-              <strong>
-                Friday, 28 August 2026
-              </strong>
-
+      <div class="shell">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">With the blessings of our families</span>
+            <h1>Koteswari <span class="ampersand">&amp;</span> Naga Phanendhra</h1>
+            <p>Together with love, tradition, and gratitude, we invite you to celebrate our wedding and the joyful gatherings that follow.</p>
+            <div class="hero-meta" aria-label="Wedding details">
+              <div class="meta-card">
+                <span>Date</span>
+                <strong>Friday, 28 August 2026</strong>
+              </div>
+              <div class="meta-card">
+                <span>Time</span>
+                <strong>10:08 PM onward</strong>
+              </div>
+              <div class="meta-card">
+                <span>Venue</span>
+                <strong>TTD Kalyana Mandapam, SMC-226A, Tirumala</strong>
+              </div>
             </div>
-
-
-            <div class="meta-card">
-
-              <span>Time</span>
-
-              <strong>
-                10:08 PM onward
-              </strong>
-
+            <div class="hero-actions">
+              <a class="button button-primary" href="#rsvp">RSVP now</a>
+              <a class="button button-secondary" target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/HHsvnd69exgjUGzf6">Open venue map</a>
+              <button class="button button-secondary" type="button" id="shareBtn">Share invitation</button>
             </div>
-
-
-            <div class="meta-card">
-
-              <span>Venue</span>
-
-              <strong>
-                TTD Kalyana Mandapam,
-                SMC-226A, Tirumala
-              </strong>
-
-            </div>
-
           </div>
 
-
-          <div class="hero-actions">
-
-            <a
-              class="button button-primary"
-              href="#rsvp">
-
-              RSVP now
-
-            </a>
-
-
-            <a
-              class="button button-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://maps.app.goo.gl/HHsvnd69exgjUGzf6">
-
-              Open venue map
-
-            </a>
-
-
-            <button
-              class="button button-secondary"
-              type="button"
-              id="shareBtn">
-
-              Share invitation
-
-            </button>
-
+          <!-- HERO IMAGE -->
+          <div class="hero-frame reveal">
+            <div class="portrait" role="img" aria-label="Temple wedding portrait background">
+              <div class="portrait-note">Sacred celebrations</div>
+              <div class="portrait-photos" aria-hidden="true">
+                <img src=".main1.webp" alt="Wedding image 1" class="is-active">
+                <img src=".image1.webp" alt="Wedding image 2">
+              </div>
+            </div>
           </div>
-
         </div>
-
-
-        <!-- HERO IMAGE -->
-
-        <div class="hero-frame reveal">
-
-          <div
-            class="portrait"
-            role="img"
-            aria-label="Temple wedding portrait background">
-
-            <div class="portrait-note">
-              Sacred celebrations
-            </div>
-
-
-            <div
-              class="portrait-photos"
-              aria-hidden="true">
-
-              <img
-                src="./main1.webp"
-                alt="Wedding image 1"
-                class="is-active">
-
-              <img
-                src="./image1.webp"
-                alt="Wedding image 2">
-
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-
     </section>
 
-
-    <!-- =====================================================
-         EVENTS
-         ===================================================== -->
-
-    <section
-      class="section"
-      id="events">
-
+    <!-- EVENTS - NOW 5 CARDS -->
+    <section class="section" id="events">
       <div class="shell">
-
         <div class="section-head reveal">
-
           <div class="divider"></div>
-
-          <span class="eyebrow">
-            Celebrations
-          </span>
-
-          <h2>
-            Wedding events
-          </h2>
-
+          <span class="eyebrow">Celebrations</span>
+          <h2>Wedding events</h2>
         </div>
-
-
         <div class="cards-3">
-
-
+          <!-- Event 1 -->
           <article class="card reveal">
-
-            <div class="card-kicker">
-              Event One
-            </div>
-
-            <h3>
-              Wedding Ceremony
-            </h3>
-
-            <p>
-              Friday, 28th August 2026
-            </p>
-
+            <div class="card-kicker">Event One</div>
+            <h3>Wedding Ceremony</h3>
+            <p>Friday, 28th August 2026</p>
             <ul class="schedule-list">
-
+              <li>Night 10:08 PM onward</li>
               <li>
-                Night 10:08 PM onward
+                <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/HHsvnd69exgjUGzf6">TTD Kalyana Mandapam, SMC-226A, Tirumala</a>
               </li>
-
-              <li>
-
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://maps.app.goo.gl/HHsvnd69exgjUGzf6">
-
-                  TTD Kalyana Mandapam,
-                  SMC-226A, Tirumala
-
-                </a>
-
-              </li>
-
             </ul>
-
           </article>
 
-
+          <!-- Event 2 -->
           <article class="card reveal">
-
-            <div class="card-kicker">
-              Event Two
-            </div>
-
-            <h3>
-              Sri Satya Narayana Swamy Vratam
-            </h3>
-
-            <p>
-              Sunday, 30th August 2026
-            </p>
-
+            <div class="card-kicker">Event Two</div>
+            <h3>Sri Satya Narayana Swamy Vratam</h3>
+            <p>Sunday, 30th August 2026</p>
             <ul class="schedule-list">
-
               <li>
-
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://maps.app.goo.gl/u5GQHv6eRo9Mgvnq6">
-
-                  Groom's Residence,
-                  Martur
-
-                </a>
-
+                <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.glu5GQHv6eRo9Mgvnq6">Grooms Residence, Martur</a>
               </li>
-
-              <li>
-                Warm gathering with family
-                and loved ones
-              </li>
-
+              <li>Warm gathering with family and loved ones</li>
             </ul>
-
           </article>
 
-
+          <!-- Event 3 -->
           <article class="card reveal">
-
-            <div class="card-kicker">
-              Event Three
-            </div>
-
-            <h3>
-              Reception
-            </h3>
-
-            <p>
-              Sunday, 30th August 2026
-            </p>
-
+            <div class="card-kicker">Event Three</div>
+            <h3>Reception</h3>
+            <p>Sunday, 30th August 2026</p>
             <ul class="schedule-list">
-
               <li>
-
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://maps.app.goo.gl/FZ8xTWVjqmeHwHYV7">
-
-                  Durga Malleshwara Kalyana Mandapam,
-                  Martur
-
-                </a>
-
+                <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/FZ8xTWVjqmeHwHYV7">Durga Malleshwara Kalyana Mandapam, Martur</a>
               </li>
-
-              <li>
-                An evening of blessings,
-                dinner, and celebration
-              </li>
-
+              <li>An evening of blessings, dinner, and celebration</li>
             </ul>
-
           </article>
 
+          <!-- Event 4: Wedding Live (YouTube) -->
+          <article class="card reveal">
+            <div class="card-kicker">Event Four</div>
+            <h3>Wedding Live</h3>
+            <p>Friday, 28th August 2026 · 10:06 PM</p>
+            <ul class="schedule-list">
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/-tsPThOKbjs">Watch on YouTube</a>
+              </li>
+              <li>Live stream of the wedding ceremony</li>
+            </ul>
+          </article>
 
+          <!-- Event 5: Reception Live (placeholder) -->
+          <article class="card reveal">
+            <div class="card-kicker">Event Five</div>
+            <h3>Reception Live</h3>
+            <p>Sunday, 30th August 2026</p>
+            <ul class="schedule-list">
+              <li style="opacity:0.7; cursor:not-allowed;">Live link will be updated soon</li>
+            </ul>
+          </article>
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =====================================================
-         COUNTDOWN
-         ===================================================== -->
-
+    <!-- COUNTDOWN -->
     <section class="section">
-
-      <div class="shell countdown-panel reveal">
-
-        <div
-          class="section-head"
-          style="margin-bottom:0;">
-
-          <span class="eyebrow">
-            Counting down
-          </span>
-
-          <h2>
-            The big day
-          </h2>
-
-        </div>
-
-
-        <div
-          class="countdown-grid"
-          aria-label="Countdown timer">
-
-          <div class="countdown-box">
-
-            <strong id="cd-days">
-              00
-            </strong>
-
-            <span>
-              Days
-            </span>
-
-          </div>
-
-
-          <div class="countdown-box">
-
-            <strong id="cd-hours">
-              00
-            </strong>
-
-            <span>
-              Hours
-            </span>
-
-          </div>
-
-
-          <div class="countdown-box">
-
-            <strong id="cd-mins">
-              00
-            </strong>
-
-            <span>
-              Minutes
-            </span>
-
-          </div>
-
-
-          <div class="countdown-box">
-
-            <strong id="cd-secs">
-              00
-            </strong>
-
-            <span>
-              Seconds
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         RSVP
-         ===================================================== -->
-
-    <section
-      class="section"
-      id="rsvp">
-
-      <div class="shell rsvp-layout">
-
-
-        <div class="panel reveal">
-
-          <span class="eyebrow">
-            Kindly respond
-          </span>
-
-          <h3>
-            RSVP
-          </h3>
-
-          <p>
-            Please share your response so we can
-            welcome you with care.
-          </p>
-
-
-          <form id="rsvpForm">
-
-            <div class="form-grid">
-
-
-              <div class="field">
-
-                <label for="name">
-                  Full name
-                </label>
-
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Your full name"
-                  required>
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="mobile">
-                  Mobile number
-                </label>
-
-                <input
-                  type="tel"
-                  id="mobile"
-                  placeholder="Your mobile number"
-                  required>
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="attending">
-                  Response
-                </label>
-
-                <select id="attending">
-
-                  <option value="Yes">
-                    Gladly attending
-                  </option>
-
-                  <option value="No">
-                    Unable to attend
-                  </option>
-
-                </select>
-
-              </div>
-
-
-              <div class="field">
-
-                <label for="guests">
-                  Guests
-                </label>
-
-                <input
-                  type="number"
-                  id="guests"
-                  min="1"
-                  value="1">
-
-              </div>
-
-
-              <div class="field-full">
-
-                <label for="message">
-                  Message
-                </label>
-
-                <textarea
-                  id="message"
-                  placeholder="Share a note or blessing">
-                </textarea>
-
-              </div>
-
-
-              <div class="field-full">
-
-                <button
-                  class="button button-primary"
-                  type="submit">
-
-                  Submit via WhatsApp
-
-                </button>
-
-              </div>
-
-            </div>
-
-          </form>
-
-        </div>
-
-
-        <!-- RSVP IMAGE -->
-
-        <aside class="panel reveal">
-
-          <div
-            class="portrait"
-            role="img"
-            aria-label="Wedding photographs">
-
-            <div
-              class="portrait-photos"
-              aria-hidden="true">
-
-              <img
-                src="./main2.webp"
-                alt="Wedding image 1"
-                class="is-active">
-
-              <img
-                src="./main1.webp"
-                alt="Wedding image 2">
-
-              <img
-                src="./image1.webp"
-                alt="Wedding image 3">
-
-              <img
-                src="./image2.webp"
-                alt="Wedding image 4">
-
-              <img
-                src="./image3.webp"
-                alt="Wedding image 5">
-
-            </div>
-
-          </div>
-
-        </aside>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FAMILY
-         ===================================================== -->
-
-    <section class="section">
-
       <div class="shell">
-
-
-        <div class="section-head reveal">
-
-          <div class="divider"></div>
-
-          <span class="eyebrow">
-            Our families
-          </span>
-
-          <h2>
-            Blessings from home
-          </h2>
-
+        <div class="countdown-panel reveal">
+          <div class="section-head" style="margin-bottom:0">
+            <span class="eyebrow">Counting down</span>
+            <h2>The big day</h2>
+          </div>
+          <div class="countdown-grid" aria-label="Countdown timer">
+            <div class="countdown-box">
+              <strong id="cd-days">00</strong>
+              <span>Days</span>
+            </div>
+            <div class="countdown-box">
+              <strong id="cd-hours">00</strong>
+              <span>Hours</span>
+            </div>
+            <div class="countdown-box">
+              <strong id="cd-mins">00</strong>
+              <span>Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <strong id="cd-secs">00</strong>
+              <span>Seconds</span>
+            </div>
+          </div>
         </div>
-
-
-        <div class="family-grid">
-
-
-          <section
-            class="family-block reveal"
-            aria-labelledby="groom-family">
-
-            <h3 id="groom-family">
-              Groom's family
-            </h3>
-
-
-            <dl>
-
-              <div>
-
-                <dt>
-                  Grandparents
-                </dt>
-
-                <dd>
-                  Sri. Vallepu. Venkateshwarlu
-                  (late) - Bhavansamma (late)
-                </dd>
-
-              </div>
-
-
-              <div>
-
-                <dt>
-                  Parents
-                </dt>
-
-                <dd>
-                  Sri Subbarao - Subbayamma
-                </dd>
-
-              </div>
-
-
-              <div>
-
-                <dt>
-                  Siblings
-                </dt>
-
-                <dd>
-                  Bhanu Shankar
-                </dd>
-
-              </div>
-
-            </dl>
-
-          </section>
-
-
-          <section
-            class="family-block reveal"
-            aria-labelledby="bride-family">
-
-            <h3 id="bride-family">
-              Bride's family
-            </h3>
-
-
-            <dl>
-
-              <div>
-
-                <dt>
-                  Grandparents
-                </dt>
-
-                <dd>
-                  Edu kondalu - Samrajyam (late)
-                </dd>
-
-              </div>
-
-
-              <div>
-
-                <dt>
-                  Parents
-                </dt>
-
-                <dd>
-                  Sri Bhadrayya - Venkata Ramana
-                </dd>
-
-              </div>
-
-
-              <div>
-
-                <dt>
-                  Siblings
-                </dt>
-
-                <dd>
-                  Ravi Teja
-                </dd>
-
-              </div>
-
-            </dl>
-
-          </section>
-
-
-        </div>
-
       </div>
-
     </section>
 
+    <!-- RSVP -->
+    <section class="section" id="rsvp">
+      <div class="shell">
+        <div class="rsvp-layout">
+          <div class="panel reveal">
+            <span class="eyebrow">Kindly respond</span>
+            <h3>RSVP</h3>
+            <p>Please share your response so we can welcome you with care.</p>
+            <form id="rsvpForm">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="field">
+                  <label for="mobile">Mobile number</label>
+                  <input type="tel" id="mobile" placeholder="Your mobile number" required>
+                </div>
+                <div class="field">
+                  <label for="attending">Response</label>
+                  <select id="attending">
+                    <option value="Yes">Gladly attending</option>
+                    <option value="No">Unable to attend</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="guests">Guests</label>
+                  <input type="number" id="guests" min="1" value="1">
+                </div>
+                <div class="field-full">
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="Share a note or blessing"></textarea>
+                </div>
+                <div class="field-full">
+                  <button class="button button-primary" type="submit">Submit via WhatsApp</button>
+                </div>
+              </div>
+            </form>
+            <p class="form-note">You’ll be redirected to WhatsApp to send your RSVP.</p>
+            <!-- Calendarly link -->
+            <p style="margin-top:1.25rem">
+              <a class="button button-primary" target="_blank" rel="noopener noreferrer" href="https://calendar.app.google/kUD2h5JKCCVxrjRA8">Schedule your wedding time slot (Calendarly)</a>
+            </p>
+          </div>
+          <!-- RSVP IMAGE -->
+          <aside class="panel reveal">
+            <div class="portrait" role="img" aria-label="Wedding photographs">
+              <div class="portrait-photos" aria-hidden="true">
+                <img src=".main2.webp" alt="Wedding image 1" class="is-active">
+                <img src=".main1.webp" alt="Wedding image 2">
+                <img src=".image1.webp" alt="Wedding image 3">
+                <img src=".image2.webp" alt="Wedding image 4">
+                <img src=".image3.webp" alt="Wedding image 5">
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
+    <!-- FAMILY -->
+    <section class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="divider"></div>
+          <span class="eyebrow">Our families</span>
+          <h2>Blessings from home</h2>
+        </div>
+        <div class="family-grid">
+          <section class="family-block reveal" aria-labelledby="groom-family">
+            <h3 id="groom-family">Groom's family</h3>
+            <dl>
+              <div>
+                <dt>Grandparents</dt>
+                <dd>Sri. Vallepu. Venkateshwarlu (late) - Bhavansamma (late)</dd>
+              </div>
+              <div>
+                <dt>Parents</dt>
+                <dd>Sri Subbarao - Subbayamma</dd>
+              </div>
+              <div>
+                <dt>Siblings</dt>
+                <dd>Bhanu Shankar</dd>
+              </div>
+            </dl>
+          </section>
+          <section class="family-block reveal" aria-labelledby="bride-family">
+            <h3 id="bride-family">Bride's family</h3>
+            <dl>
+              <div>
+                <dt>Grandparents</dt>
+                <dd>Edu kondalu - Samrajyam (late)</dd>
+              </div>
+              <div>
+                <dt>Parents</dt>
+                <dd>Sri Bhadrayya - Venkata Ramana</dd>
+              </div>
+              <div>
+                <dt>Siblings</dt>
+                <dd>Ravi Teja</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </div>
+    </section>
   </main>
 
-
-  <!-- =======================================================
-       FOOTER
-       ======================================================= -->
-
-  <footer class="footer shell">
-
-    <strong>
-      Koteswari &amp; Naga Phanendhra
-    </strong>
-
-    <p>
-      With love, gratitude, and the blessings
-      of our families, we look forward to
-      celebrating with you.
-    </p>
-
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="shell">
+      <strong>Koteswari &amp; Naga Phanendhra</strong>
+      <p>With love, gratitude, and the blessings of our families, we look forward to celebrating with you.</p>
+    </div>
   </footer>
 
-
-  <!-- =======================================================
-       MUSIC
-       ======================================================= -->
-
-  <audio
-    id="bgMusic"
-    loop
-    preload="auto"
-    playsinline>
-
-    <source
-      src="./jashn_e_bahara_flute.mp3"
-      type="audio/mpeg">
-
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop preload="auto" playsinline>
+    <source src=".jashnebaharaflute.mp3" type="audio/mpeg">
   </audio>
 
+  <!-- WHATSAPP -->
+  <a class="fab whatsapp-fab" href="https://wa.me/919966022016?text=Hello%20I%20would%20like%20to%20RSVP" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"></a>
 
-  <!-- =======================================================
-       WHATSAPP
-       ======================================================= -->
-
-  <a
-    class="fab whatsapp-fab"
-    href="https://wa.me/919966022016?text=Hello%20I%20would%20like%20to%20RSVP"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat on WhatsApp">
-
-    💬
-
-  </a>
-
-
-  <!-- =======================================================
-       JAVASCRIPT
-       ======================================================= -->
-
+  <!-- JAVASCRIPT -->
   <script>
-
-
-    /* =======================================================
-       COUNTDOWN
-       ======================================================= */
-
+    // COUNTDOWN
     function updateCountdown() {
-
-      const target =
-        new Date('2026-08-28T22:08:00+05:30');
-
-      const now =
-        new Date();
-
-      const diff =
-        target - now;
-
-      const ids = [
-        'cd-days',
-        'cd-hours',
-        'cd-mins',
-        'cd-secs'
-      ];
-
-
+      const target = new Date('2026-08-28T22:08:00+05:30');
+      const now = new Date();
+      const diff = target - now;
+      const ids = ['cd-days', 'cd-hours', 'cd-mins', 'cd-secs'];
       if (diff <= 0) {
-
-        ids.forEach(id => {
-
-          document.getElementById(id).textContent = '00';
-
-        });
-
+        ids.forEach(id => document.getElementById(id).textContent = '00');
         return;
       }
-
-
-      const d =
-        Math.floor(diff / 86400000);
-
-      const h =
-        Math.floor(
-          (diff % 86400000) / 3600000
-        );
-
-      const m =
-        Math.floor(
-          (diff % 3600000) / 60000
-        );
-
-      const s =
-        Math.floor(
-          (diff % 60000) / 1000
-        );
-
-
-      document.getElementById('cd-days')
-        .textContent =
-        String(d).padStart(2, '0');
-
-      document.getElementById('cd-hours')
-        .textContent =
-        String(h).padStart(2, '0');
-
-      document.getElementById('cd-mins')
-        .textContent =
-        String(m).padStart(2, '0');
-
-      document.getElementById('cd-secs')
-        .textContent =
-        String(s).padStart(2, '0');
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
     }
-
-
     updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-    setInterval(
-      updateCountdown,
-      1000
-    );
-
-
-    /* =======================================================
-       REVEAL ANIMATIONS
-       ======================================================= */
-
-    const revealItems =
-      document.querySelectorAll('.reveal');
-
-
-    const observer =
-      new IntersectionObserver(
-        (entries) => {
-
-          entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-              entry.target.classList.add(
-                'visible'
-              );
-
-              observer.unobserve(
-                entry.target
-              );
-            }
-
-          });
-
-        },
-        {
-          threshold: 0.14
+    // REVEAL ANIMATIONS
+    const revealItems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
-      );
-
-
-    revealItems.forEach(item =>
-      observer.observe(item)
-    );
-
-
-    /* =======================================================
-       SHARE
-       ======================================================= */
-
-    document
-      .getElementById('shareBtn')
-      ?.addEventListener(
-        'click',
-        async () => {
-
-          try {
-
-            if (navigator.share) {
-
-              await navigator.share({
-
-                title:
-                  'Koteswari & Naga Phanendhra Wedding',
-
-                url:
-                  window.location.href
-
-              });
-
-            } else {
-
-              await navigator.clipboard
-                .writeText(
-                  window.location.href
-                );
-
-              alert(
-                'Link copied to clipboard'
-              );
-            }
-
-          } catch (e) {}
-
-        }
-      );
-
-
-    /* =======================================================
-       RSVP WHATSAPP
-       ======================================================= */
-
-    document
-      .getElementById('rsvpForm')
-      ?.addEventListener(
-        'submit',
-        function (e) {
-
-          e.preventDefault();
-
-
-          const data = {
-
-            name:
-              document.getElementById('name').value,
-
-            mobile:
-              document.getElementById('mobile').value,
-
-            attending:
-              document.getElementById('attending').value,
-
-            guests:
-              document.getElementById('guests').value,
-
-            message:
-              document.getElementById('message').value
-          };
-
-
-          const whatsappMessage =
-`Wedding RSVP
-
-Name: ${data.name}
-Mobile: ${data.mobile}
-Attending: ${data.attending}
-Number of Guests: ${data.guests}
-
-Message:
-${data.message}`;
-
-
-          const whatsappURL =
-            `https://wa.me/919966022016?text=${
-              encodeURIComponent(
-                whatsappMessage
-              )
-            }`;
-
-
-          window.open(
-            whatsappURL,
-            '_blank'
-          );
-
-        }
-      );
-
-
-    /* =======================================================
-       IMAGE SLIDESHOW
-       ======================================================= */
-
-    document
-      .querySelectorAll('.portrait-photos')
-      .forEach(gallery => {
-
-        const photos =
-          gallery.querySelectorAll('img');
-
-
-        if (photos.length <= 1) {
-
-          prepareImageGallery(
-            gallery
-          );
-
-          return;
-        }
-
-
-        let current = 0;
-
-
-        photos[current]
-          .classList.add(
-            'is-active'
-          );
-
-
-        prepareImageGallery(
-          gallery
-        );
-
-
-        setInterval(
-          () => {
-
-            photos[current]
-              .classList.remove(
-                'is-active'
-              );
-
-
-            current =
-              (current + 1) %
-              photos.length;
-
-
-            photos[current]
-              .classList.add(
-                'is-active'
-              );
-
-
-            updateGalleryHeight(
-              gallery,
-              photos[current]
-            );
-
-          },
-          3500
-        );
-
       });
+    }, { threshold: 0.14 });
+    revealItems.forEach(item => observer.observe(item));
 
+    // SHARE
+    document.getElementById('shareBtn')?.addEventListener('click', async () => {
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: 'Koteswari & Naga Phanendhra Wedding',
+            url: window.location.href
+          });
+        } else {
+          await navigator.clipboard.writeText(window.location.href);
+          alert('Link copied to clipboard!');
+        }
+      } catch (e) {
+        // ignore
+      }
+    });
 
-    /* =======================================================
-       IMAGE HEIGHT
-       ======================================================= */
+    // RSVP WHATSAPP
+    document.getElementById('rsvpForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = {
+        name: document.getElementById('name').value,
+        mobile: document.getElementById('mobile').value,
+        attending: document.getElementById('attending').value,
+        guests: document.getElementById('guests').value,
+        message: document.getElementById('message').value
+      };
+      const whatsappMessage =
+        `Wedding RSVP\nName: ${data.name}\nMobile: ${data.mobile}\nAttending: ${data.attending}\nNumber of Guests: ${data.guests}\nMessage: ${data.message}`;
+      const whatsappURL = `https://wa.me/919966022016?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappURL, '_blank');
+    });
 
+    // IMAGE SLIDESHOW
+    document.querySelectorAll('.portrait-photos').forEach(gallery => {
+      const photos = gallery.querySelectorAll('img');
+      if (photos.length <= 1) return;
+      let current = 0;
+      photos[current].classList.add('is-active');
+      setInterval(() => {
+        photos[current].classList.remove('is-active');
+        current = (current + 1) % photos.length;
+        photos[current].classList.add('is-active');
+      }, 3500);
+    });
+
+    // IMAGE HEIGHT
     function prepareImageGallery(gallery) {
-
-      const images =
-        gallery.querySelectorAll('img');
-
-
+      const images = gallery.querySelectorAll('img');
       images.forEach(img => {
-
         if (img.complete) {
-
-          updateGalleryHeight(
-            gallery,
-            img
-          );
-
-        }
-
-
-        img.addEventListener(
-          'load',
-          () => {
-
-            if (
-              img.classList.contains(
-                'is-active'
-              )
-            ) {
-
-              updateGalleryHeight(
-                gallery,
-                img
-              );
-            }
-
-          }
-        );
-
-      });
-
-    }
-
-
-    function updateGalleryHeight(
-      gallery,
-      image
-    ) {
-
-      if (
-        !image.naturalWidth ||
-        !image.naturalHeight
-      ) {
-        return;
-      }
-
-
-      const width =
-        gallery.clientWidth;
-
-
-      const ratio =
-        image.naturalHeight /
-        image.naturalWidth;
-
-
-      const height =
-        width * ratio;
-
-
-      gallery.style.height =
-        `${height}px`;
-    }
-
-
-    /* =======================================================
-       RESIZE IMAGE GALLERIES
-       ======================================================= */
-
-    window.addEventListener(
-      'resize',
-      () => {
-
-        document
-          .querySelectorAll(
-            '.portrait-photos'
-          )
-          .forEach(gallery => {
-
-            const active =
-              gallery.querySelector(
-                'img.is-active'
-              );
-
-
-            if (active) {
-
-              updateGalleryHeight(
-                gallery,
-                active
-              );
-            }
-
+          if (img.classList.contains('is-active')) updateGalleryHeight(gallery, img);
+        } else {
+          img.addEventListener('load', () => {
+            if (img.classList.contains('is-active')) updateGalleryHeight(gallery, img);
           });
+        }
+      });
+    }
+    function updateGalleryHeight(gallery, image) {
+      if (!image.naturalWidth || !image.naturalHeight) return;
+      const width = gallery.clientWidth;
+      const ratio = image.naturalHeight / image.naturalWidth;
+      const height = width * ratio;
+      gallery.style.height = height + 'px';
+    }
+    window.addEventListener('resize', () => {
+      document.querySelectorAll('.portrait-photos').forEach(gallery => {
+        const active = gallery.querySelector('img.is-active');
+        if (active) updateGalleryHeight(gallery, active);
+      });
+    });
+    document.querySelectorAll('.portrait-photos').forEach(gallery => prepareImageGallery(gallery));
 
-      }
-    );
-
-
-    /* =======================================================
-       MUSIC
-       ======================================================= */
-
-    const music =
-      document.getElementById(
-        'bgMusic'
-      );
-
-
-    const musicToggle =
-      document.getElementById(
-        'musicToggle'
-      );
-
-
+    // MUSIC
+    const music = document.getElementById('bgMusic');
+    const musicToggle = document.getElementById('musicToggle');
     function updateMusicButton() {
-
-      if (
-        !music ||
-        !musicToggle
-      ) return;
-
-
-      const playing =
-        !music.paused;
-
-
-      musicToggle.textContent =
-        playing
-          ? 'Pause music'
-          : 'Play music';
-
-
-      musicToggle.classList.toggle(
-        'is-playing',
-        playing
-      );
-
-
-      musicToggle.setAttribute(
-        'aria-pressed',
-        playing
-      );
+      if (!music || !musicToggle) return;
+      const playing = !music.paused && music.readyState >= 2;
+      musicToggle.textContent = playing ? 'Pause music' : 'Play music';
+      musicToggle.classList.toggle('is-playing', playing);
+      musicToggle.setAttribute('aria-pressed', playing);
     }
-
-
     function fadeMusic() {
-
       let v = 0;
-
       music.volume = 0;
-
-
-      const f =
-        setInterval(
-          () => {
-
-            v += 0.02;
-
-            music.volume =
-              Math.min(
-                v,
-                0.35
-              );
-
-
-            if (v >= 0.35) {
-
-              clearInterval(f);
-
-            }
-
-          },
-          120
-        );
+      const f = setInterval(() => {
+        v += 0.02;
+        music.volume = Math.min(v, 0.35);
+        if (v >= 0.35) clearInterval(f);
+      }, 120);
     }
-
-
     if (music) {
-
       music.volume = 0;
-
-
-      music.addEventListener(
-        'play',
-        updateMusicButton
-      );
-
-
-      music.addEventListener(
-        'pause',
-        updateMusicButton
-      );
-
-
-      const startMusic =
-        async () => {
-
-          try {
-
-            await music.play();
-
-            fadeMusic();
-
-          } catch (e) {
-
-            console.log(
-              "Autoplay blocked:",
-              e
-            );
-          }
-
-
-          updateMusicButton();
-        };
-
-
-      document.addEventListener(
-        'click',
-        startMusic,
-        {
-          once: true
-        }
-      );
-
-
-      document.addEventListener(
-        'touchstart',
-        startMusic,
-        {
-          once: true
-        }
-      );
-
-
-      musicToggle?.addEventListener(
-        'click',
-        async () => {
-
-          if (music.paused) {
-
-            await music.play();
-
-            fadeMusic();
-
-          } else {
-
-            music.pause();
-
-          }
-
-
-          updateMusicButton();
-
-        }
-      );
-
+      music.addEventListener('play', updateMusicButton);
+      music.addEventListener('pause', updateMusicButton);
     }
-
-
+    const startMusic = async () => {
+      try {
+        await music.play();
+        fadeMusic();
+      } catch (e) {
+        console.log('Autoplay blocked', e);
+      }
+      updateMusicButton();
+    };
+    document.addEventListener('click', startMusic, { once: true });
+    document.addEventListener('touchstart', startMusic, { once: true });
+    musicToggle?.addEventListener('click', async () => {
+      if (music.paused) {
+        await music.play();
+        fadeMusic();
+      } else {
+        music.pause();
+      }
+      updateMusicButton();
+    });
     updateMusicButton();
 
-
-    /* =======================================================
-       FIREWORKS
-       ======================================================= */
-
-    const canvas =
-      document.getElementById(
-        'fireworksCanvas'
-      );
-
-
+    // FIREWORKS
+    const canvas = document.getElementById('fireworksCanvas');
     if (canvas) {
-
-      const ctx =
-        canvas.getContext('2d');
-
-
+      const ctx = canvas.getContext('2d');
       let particles = [];
-
       let lastBurst = 0;
-
       let lastTrail = 0;
-
-
-      const reduceMotion =
-        window.matchMedia(
-          '(prefers-reduced-motion: reduce)'
-        ).matches;
-
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       function resizeCanvas() {
-
-        const ratio =
-          window.devicePixelRatio || 1;
-
-
-        canvas.width =
-          window.innerWidth *
-          ratio;
-
-
-        canvas.height =
-          window.innerHeight *
-          ratio;
-
-
-        canvas.style.width =
-          window.innerWidth + 'px';
-
-
-        canvas.style.height =
-          window.innerHeight + 'px';
-
-
-        ctx.setTransform(
-          ratio,
-          0,
-          0,
-          ratio,
-          0,
-          0
-        );
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = window.innerWidth * ratio;
+        canvas.height = window.innerHeight * ratio;
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
       }
 
-
-      function burst(
-        x,
-        y,
-        spread = 54
-      ) {
-
+      function burst(x, y, spread = 54) {
         const palette = [
-
           'rgba(215,179,143,0.96)',
-
           'rgba(123,90,61,0.94)',
-
           'rgba(255,239,213,0.98)',
-
           'rgba(157,180,168,0.80)',
-
           'rgba(246,210,148,0.92)'
         ];
-
-
-        for (
-          let i = 0;
-          i < spread;
-          i++
-        ) {
-
-          const angle =
-            (Math.PI * 2 * i) /
-            spread;
-
-
-          const speed =
-            0.8 +
-            Math.random() * 3.2;
-
-
+        for (let i = 0; i < spread; i++) {
+          const angle = (Math.PI * 2 * i) / spread;
+          const speed = 0.8 + Math.random() * 3.2;
           particles.push({
-
-            x,
-            y,
-
-            vx:
-              Math.cos(angle) *
-              speed,
-
-            vy:
-              Math.sin(angle) *
-              speed -
-              0.9,
-
-            life:
-              56 +
-              Math.random() *
-              36,
-
-            maxLife:
-              90,
-
-            size:
-              1.2 +
-              Math.random() *
-              2.4,
-
-            color:
-              palette[
-                Math.floor(
-                  Math.random() *
-                  palette.length
-                )
-              ]
-
+            x, y,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed - 0.9,
+            life: 56 + Math.random() * 36,
+            maxLife: 90,
+            size: 1.2 + Math.random() * 2.4,
+            color: palette[Math.floor(Math.random() * palette.length)]
           });
         }
       }
 
-
       function comet() {
-
-        const startX =
-          Math.random() *
-          window.innerWidth;
-
-
-        const startY =
-          window.innerHeight *
-          (
-            0.18 +
-            Math.random() * 0.42
-          );
-
-
+        const startX = Math.random() * window.innerWidth;
+        const startY = window.innerHeight * (0.18 + Math.random() * 0.42);
         particles.push({
-
-          x:
-            startX,
-
-          y:
-            startY,
-
-          vx:
-            -0.2 +
-            Math.random() *
-            0.4,
-
-          vy:
-            -2.6 -
-            Math.random() *
-            1.4,
-
-          life:
-            26,
-
-          maxLife:
-            26,
-
-          size:
-            2.8,
-
-          color:
-            'rgba(255,244,214,0.95)',
-
-          trail:
-            true
+          x: startX, y: startY,
+          vx: -0.2 - Math.random() * 0.4,
+          vy: -2.6 - Math.random() * 1.4,
+          life: 26,
+          maxLife: 26,
+          size: 2.8,
+          color: 'rgba(255,244,214,0.95)',
+          trail: true
         });
       }
 
-
-      function alphaColor(
-        color,
-        alpha
-      ) {
-
-        return color.replace(
-          /rgba\(([^)]+),\s*([0-9.]+)\)/,
-          function (_, rgb) {
-
-            return (
-              'rgba(' +
-              rgb +
-              ', ' +
-              alpha +
-              ')'
-            );
-          }
-        );
+      function alphaColor(color, alpha) {
+        return color.replace(/rgba\(([^)]+)\)/, (_, rgb) => `rgba(${rgb}, ${alpha})`);
       }
-
 
       function animate(ts) {
-
-        ctx.clearRect(
-          0,
-          0,
-          window.innerWidth,
-          window.innerHeight
-        );
-
-
-        if (
-          !reduceMotion &&
-          ts - lastBurst > 780
-        ) {
-
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        if (!reduceMotion && ts - lastBurst > 780) {
           lastBurst = ts;
-
-
-          burst(
-
-            window.innerWidth *
-              (
-                0.08 +
-                Math.random() *
-                0.84
-              ),
-
-            window.innerHeight *
-              (
-                0.08 +
-                Math.random() *
-                0.52
-              ),
-
-            40 +
-              Math.floor(
-                Math.random() * 20
-              )
-          );
+          burst(window.innerWidth * (0.08 + Math.random() * 0.84), window.innerHeight * (0.08 + Math.random() * 0.52), 40 + Math.floor(Math.random() * 20));
         }
-
-
-        if (
-          !reduceMotion &&
-          ts - lastTrail > 1400
-        ) {
-
+        if (!reduceMotion && ts - lastTrail > 1400) {
           lastTrail = ts;
-
           comet();
         }
-
-
         const next = [];
-
-
         for (const p of particles) {
-
           p.x += p.vx;
-
           p.y += p.vy;
-
-          p.vy +=
-            p.trail
-              ? 0.02
-              : 0.025;
-
+          p.vy += p.trail ? 0.02 : 0.025;
           p.life -= 1;
-
-
-          if (p.life > 0) {
-
-            const alpha =
-              Math.max(
-                p.life /
-                  p.maxLife,
-                0
-              );
-
-
+          if (p.life <= 0) continue;
+          const alpha = Math.max(p.life / p.maxLife, 0);
+          ctx.beginPath();
+          ctx.fillStyle = alphaColor(p.color, alpha.toFixed(3));
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+          if (p.trail) {
             ctx.beginPath();
-
-            ctx.fillStyle =
-              alphaColor(
-                p.color,
-                alpha.toFixed(3)
-              );
-
-
-            ctx.arc(
-              p.x,
-              p.y,
-              p.size,
-              0,
-              Math.PI * 2
-            );
-
-
+            ctx.fillStyle = `rgba(255, 233, 184, ${Math.max(alpha * 0.45, 0)})`;
+            ctx.arc(p.x, p.y + 8, p.size * 1.6, 0, Math.PI * 2);
             ctx.fill();
-
-
-            if (p.trail) {
-
-              ctx.beginPath();
-
-              ctx.fillStyle =
-                'rgba(255, 233, 184, ' +
-                Math.max(
-                  alpha * 0.45,
-                  0
-                ).toFixed(3) +
-                ')';
-
-
-              ctx.arc(
-                p.x,
-                p.y + 8,
-                p.size * 1.6,
-                0,
-                Math.PI * 2
-              );
-
-
-              ctx.fill();
-
-
-              if (p.life === 8) {
-
-                burst(
-                  p.x,
-                  p.y,
-                  28
-                );
-              }
-            }
-
-
-            next.push(p);
           }
-
+          if (p.life < 8) burst(p.x, p.y, 28);
+          next.push(p);
         }
-
-
-        particles =
-          next.slice(-900);
-
-
-        requestAnimationFrame(
-          animate
-        );
+        particles = next.slice(-900);
+        requestAnimationFrame(animate);
       }
 
-
       resizeCanvas();
-
-      requestAnimationFrame(
-        animate
-      );
-
-
-      window.addEventListener(
-        'resize',
-        resizeCanvas
-      );
+      requestAnimationFrame(animate);
+      window.addEventListener('resize', resizeCanvas);
     }
-
   </script>
-
 </body>
 </html>
